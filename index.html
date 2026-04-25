@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altar Support</title>
+    <meta name="description" content="Support, subscription help, privacy links, and contact information for the Altar iOS app.">
+    <style>
+        :root {
+            color-scheme: light;
+            --ink: #1f1a17;
+            --muted: #665f59;
+            --paper: #fbf7ef;
+            --card: #ffffff;
+            --line: #eadfce;
+            --accent: #8a4f2b;
+            --accent-dark: #5f321c;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(138, 79, 43, 0.14), transparent 34rem),
+                linear-gradient(180deg, #fffaf3 0%, var(--paper) 100%);
+        }
+
+        main {
+            width: min(760px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 56px 0;
+        }
+
+        .hero,
+        section {
+            background: rgba(255, 255, 255, 0.86);
+            border: 1px solid var(--line);
+            border-radius: 24px;
+            box-shadow: 0 20px 60px rgba(95, 50, 28, 0.08);
+        }
+
+        .hero {
+            padding: 36px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 28px;
+            margin-top: 16px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.15;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 8vw, 4.4rem);
+            letter-spacing: -0.06em;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 1.02rem;
+            margin-top: 22px;
+        }
+
+        p,
+        li {
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 10px 0 0;
+        }
+
+        ul {
+            margin: 12px 0 0;
+            padding-left: 22px;
+        }
+
+        a {
+            color: var(--accent-dark);
+            font-weight: 650;
+        }
+
+        .tagline {
+            color: var(--muted);
+            font-size: 1.12rem;
+            margin-top: 10px;
+        }
+
+        .contact {
+            display: inline-flex;
+            margin-top: 22px;
+            padding: 12px 18px;
+            border-radius: 999px;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+        }
+
+        .updated {
+            color: var(--muted);
+            font-size: 0.9rem;
+            margin-top: 18px;
+        }
+
+        @media (max-width: 560px) {
+            main {
+                width: min(100% - 20px, 760px);
+                padding: 20px 0;
+            }
+
+            .hero,
+            section {
+                border-radius: 18px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <h1>Altar Support</h1>
+            <p class="tagline">Help for the Altar iOS app, subscriptions, privacy, and account deletion.</p>
+            <a class="contact" href="mailto:itsmeethankim2@gmail.com?subject=Altar%20Support">Email Support</a>
+            <p class="updated">Last updated: April 25, 2026</p>
+        </div>
+
+        <section aria-labelledby="contact">
+            <h2 id="contact">Contact</h2>
+            <p>For questions, feedback, billing issues, or technical problems, email <a href="mailto:itsmeethankim2@gmail.com">itsmeethankim2@gmail.com</a>.</p>
+            <p>Please include your device model, iOS version, and a short description of what happened if you are reporting a bug.</p>
+        </section>
+
+        <section aria-labelledby="faq">
+            <h2 id="faq">Frequently Asked Questions</h2>
+
+            <h3>How does app shielding work?</h3>
+            <p>Altar uses Apple's Screen Time and Family Controls APIs to shield apps you voluntarily choose on your device. Your selected apps and Screen Time data stay on-device and are not sent to our servers.</p>
+
+            <h3>How do I restore my subscription?</h3>
+            <p>Open Altar, go to Settings, and tap Restore Purchases. Your subscription is linked to your Apple ID.</p>
+
+            <h3>How do I cancel my subscription?</h3>
+            <p>Subscriptions are managed by Apple. On your iPhone, open Settings, tap your name, choose Subscriptions, select Altar, then cancel or change your plan.</p>
+
+            <h3>How do I delete my account?</h3>
+            <p>Open Altar, go to Settings, sign in if needed, then choose Delete Account. Account deletion removes your Supabase account and synced records. Local app data can also be removed by deleting the app from your device.</p>
+
+            <h3>The app is not blocking apps correctly.</h3>
+            <p>Confirm Screen Time authorization is enabled for Altar, then reopen Altar and choose your guarded apps again from Settings. App shielding requires a physical iPhone; simulator builds cannot fully validate Apple's Screen Time behavior.</p>
+        </section>
+
+        <section aria-labelledby="links">
+            <h2 id="links">Legal Links</h2>
+            <ul>
+                <li><a href="https://itsmeethankim.github.io/altar-legal/privacy">Privacy Policy</a></li>
+                <li><a href="https://itsmeethankim.github.io/altar-legal/terms">Terms of Service</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
